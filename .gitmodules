@@ -1,0 +1,9 @@
+[submodule "codeforces"]
+	path = codeforces
+	url = https://github.com/mwgh/codeforces
+[submodule "projeuler"]
+	path = projeuler
+	url = https://github.com/mwgh/projeuler
+[submodule "advent2019"]
+	path = advent2019
+	url = https://github.com/mwgh/advent2019
