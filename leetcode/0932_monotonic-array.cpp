@@ -16,10 +16,17 @@ bool MonotonicArray::isMonotonic(std::vector<int>& A) {
 }
 
 void MonotonicArray::print_vector(std::vector<int>& A) {
+  bool has_l = A.size() >= 1;
+  std::vector<int>::iterator l;
+  if (has_l) {
+    l = A.end();
+    --l;
+  }
+
   std::cout << "[";
-  for (int i = 0; i < A.size(); ++i) {
-    std::cout << A[i];
-    if (i != A.size() - 1) {
+  for (auto i = A.begin(); i != A.end(); ++i) {
+    std::cout << *i;
+    if (has_l && i != l) {
       std::cout << ", ";
     }
   }
@@ -27,9 +34,9 @@ void MonotonicArray::print_vector(std::vector<int>& A) {
 }
 
 int MonotonicArray::test(void) {
-  std::vector<int> A {0, -1, -20, -25};
+  std::vector<int> A {0, 5, 7, 1};
   print_vector(A);
-  std::cout << "Is the vector monotonic? " 
+  std::cout << "Is the vector monotonic? "
       << isMonotonic(A) << std::endl;
   return 0;
 }

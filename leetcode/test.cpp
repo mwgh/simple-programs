@@ -1,18 +1,26 @@
-#include "0932_monotonic-array.h"
 #include "0003_longest-substring-without-repeating-characters.h"
+#include "0007_reverse-integer.h"
+#include "0932_monotonic-array.h"
 
 int main(void) {
-  MonotonicArray* a = new MonotonicArray();
-  int ret0 = a->test();
+  LongestSubstring* ls = new LongestSubstring();
+  int ret0 = ls->test();
   if (ret0) {
-    std::cerr << "Error with monotonic array" << std::endl;
+    std::cerr << "Error with longest substring" << std::endl;
     exit(1);
   }
 
-  LongestSubstring* ls = new LongestSubstring();
-  int ret1 = ls->test();
+  ReverseInteger* ri = new ReverseInteger();
+  int ret1 = ri->test();
   if (ret1) {
-    std::cerr << "Error with longest substring" << std::endl;
+    std::cerr << "Error with reverse integer" << std::endl;
+    exit(1);
+  }
+
+  MonotonicArray* a = new MonotonicArray();
+  int ret2 = a->test();
+  if (ret2) {
+    std::cerr << "Error with monotonic array" << std::endl;
     exit(1);
   }
 }

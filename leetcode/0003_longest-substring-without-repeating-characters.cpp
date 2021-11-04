@@ -17,8 +17,8 @@ int LongestSubstring::lengthOfLongestSubstring(std::string s) {
 int LongestSubstring::test(void) {
   std::string hello = "hello abcdefg";
   std::cout << "The length of the longest substring in the string '"
-      << hello << "' is " 
-      << (new LongestSubstring())->lengthOfLongestSubstring(hello) 
+      << hello << "' is "
+      << (new LongestSubstring())->lengthOfLongestSubstring(hello)
       << "." << std::endl;
   return 0;
 }

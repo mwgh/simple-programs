@@ -13,7 +13,7 @@ class MyPow {
     }
 
     public double myPow(double x, int n) {
-        if (n == 0 || new Double(x).equals(1.0)) {
+        if (n == 0 || Double.valueOf(x).equals(1.0)) {
             return 1.0;
         } else if (n == 1) {
             return x;
