@@ -1,4 +1,16 @@
-class Solution {
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
+class ThreeSum {
+    public static void main(String[] args) {
+        List<List<Integer>> result = 
+                new ThreeSum().threeSum(new int[] {-2, 0, 2, 3});
+        System.out.println(result);
+    }
+
     public List<List<Integer>> threeSum(int[] nums) {
         Set<List<Integer>> sumZero = new HashSet<>();
 

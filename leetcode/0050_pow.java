@@ -1,4 +1,17 @@
-class Solution {
+class MyPow {
+    public static void main(String[] args) {
+        MyPow s = new MyPow();
+        testMyPow(s, -2.0, 3);
+        testMyPow(s, 2.0, 3);
+    }
+
+    private static double testMyPow(MyPow s, double x, int n) {
+        double myPow = s.myPow(x, n);
+        assert(myPow == Math.pow(x, n));
+        System.out.println(x + "^" + n + " = " + myPow);
+        return myPow;
+    }
+
     public double myPow(double x, int n) {
         if (n == 0 || new Double(x).equals(1.0)) {
             return 1.0;
