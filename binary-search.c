@@ -34,7 +34,7 @@ int main()
     }
     putchar('\n');
 
-    P = BinarySearch( L, X );
+    P = BinarySearch(L, X);
     printf("%d\n", P);
 
     return 0;
