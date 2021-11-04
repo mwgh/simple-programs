@@ -24,7 +24,7 @@ void MonotonicArray::print_vector(std::vector<int>& A) {
   }
 
   std::cout << "[";
-  for (auto i = A.begin(); i != A.end(); ++i) {
+  for (auto i = A.cbegin(); i != A.cend(); ++i) {
     std::cout << *i;
     if (has_l && i != l) {
       std::cout << ", ";
