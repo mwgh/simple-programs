@@ -4,7 +4,7 @@
 #include <map>
 #include <string>
 
-class LongestSubstring {
+class LongestSubstringWithoutRepeatingCharacters {
 public:
   int lengthOfLongestSubstring(std::string s);
 

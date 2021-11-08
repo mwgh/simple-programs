@@ -1,6 +1,7 @@
 #include "0003_longest-substring-without-repeating-characters.h"
 
-int LongestSubstring::lengthOfLongestSubstring(std::string s) {
+int LongestSubstringWithoutRepeatingCharacters::lengthOfLongestSubstring(
+      std::string s) {
   int n = s.size();
   int ans = 0;
   std::map<char, int> currentIndex;
@@ -14,12 +15,13 @@ int LongestSubstring::lengthOfLongestSubstring(std::string s) {
   return ans;
 }
 
-int LongestSubstring::test(void) {
+int LongestSubstringWithoutRepeatingCharacters::test(void) {
   std::string hello = "hello abcdefg";
   std::cout << "The length of the longest substring without repeating "
       "characters in the string '"
       << hello << "' is "
-      << (new LongestSubstring())->lengthOfLongestSubstring(hello)
+      << (new LongestSubstringWithoutRepeatingCharacters())
+          ->lengthOfLongestSubstring(hello)
       << "." << std::endl;
   return 0;
 }

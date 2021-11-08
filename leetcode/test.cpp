@@ -3,7 +3,8 @@
 #include <iostream>
 
 int main(void) {
-  LongestSubstring* ls = new LongestSubstring();
+  LongestSubstringWithoutRepeatingCharacters* ls = new 
+      LongestSubstringWithoutRepeatingCharacters();
   std::cout << "Testing longest substring:" << std::endl;
   int ret0 = ls->test();
   if (ret0) {
