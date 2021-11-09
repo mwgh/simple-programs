@@ -1,14 +1,5 @@
 #! /usr/bin/python
-'''
-    Date created: 2020-05-16
-    Date last modified: 2020-05-16
-    Python Version: 3.7.6
-'''
-
-def get_int():
-	return int(input())
-
-n = get_int()
+n = int(input())
 
 sum_x = 0
 sum_y = 0
