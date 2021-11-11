@@ -16,7 +16,7 @@ int main(void) {
     "monotonic array"
   };
 
-  for (int i = 0; i < ls.size(); ++i) {
+  for (unsigned int i = 0; i < ls.size(); ++i) {
     std::cout << "Testing " << testNames[i] << ":" << std::endl;
     int ret = ls[i]->test();
     if (ret) {

@@ -4,7 +4,7 @@ bool MonotonicArray::isMonotonic(std::vector<int>& A) {
   bool isMonotoneIncreasing = true;
   bool isMonotoneDecreasing = true;
 
-  for (int i = 0; i < A.size() - 1; i++) {
+  for (unsigned int i = 0; i < A.size() - 1; ++i) {
     if (A[i] > A[i + 1]) {
       isMonotoneIncreasing = false;
     } else if (A[i] < A[i + 1]) {

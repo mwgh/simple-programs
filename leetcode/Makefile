@@ -1,5 +1,5 @@
 all: *.h *.cpp *.java
-	g++ -o test *.cpp
+	g++ -o test -Wall -Wextra *.cpp
 	javac *.java
 
 clean:
