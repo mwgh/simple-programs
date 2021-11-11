@@ -17,7 +17,7 @@ int *threefib(int a0, int a1, int a2, int n, int *result) {
                 *result = a2;
                 return T;
             default:
-                assert(0); // should never get here
+                assert(0);  // should never get here
         }
     }
     assert(n >= 3);
@@ -30,7 +30,7 @@ int *threefib(int a0, int a1, int a2, int n, int *result) {
     for (int i = 3; i < n + 1; i++) {
         T[i] = T[i - 1] + T[i - 2] - T[i - 3];
     }
-    
+
     *result = T[n];
     return T;
 }

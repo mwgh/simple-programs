@@ -14,10 +14,9 @@ struct LNode {
 };
 
 List ReadInput(); /* 裁判实现，细节不表。元素从下标1开始存储 */
-Position BinarySearch( List L, ElementType X );
+Position BinarySearch(List L, ElementType X);
 
-int main()
-{
+int main() {
     List L;
     ElementType X = 12;
     Position P;
