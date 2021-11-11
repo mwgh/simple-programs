@@ -6,14 +6,14 @@
 
 int main(void) {
   std::vector<LeetcodeSolution*> ls = {
-      new LongestSubstringWithoutRepeatingCharacters(),
-      new ReverseInteger(),
-      new MonotonicArray()
+    new LongestSubstringWithoutRepeatingCharacters(),
+    new ReverseInteger(),
+    new MonotonicArray()
   };
   std::vector<std::string> testNames = {
-      "longest substring without repeating characters",
-      "reverse integer",
-      "monotonic array"
+    "longest substring without repeating characters",
+    "reverse integer",
+    "monotonic array"
   };
 
   for (int i = 0; i < ls.size(); ++i) {
@@ -26,4 +26,5 @@ int main(void) {
 
     if (i != ls.size() - 1)  std::cout << std::endl;
   }
+  return 0;
 }
