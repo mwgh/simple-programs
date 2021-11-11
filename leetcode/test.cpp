@@ -1,32 +1,29 @@
 #include "test.h"
 
 #include <iostream>
+#include <string>
+#include <vector>
 
 int main(void) {
-  LongestSubstringWithoutRepeatingCharacters* ls = new 
-      LongestSubstringWithoutRepeatingCharacters();
-  std::cout << "Testing longest substring:" << std::endl;
-  int ret0 = ls->test();
-  if (ret0) {
-    std::cerr << "Error with longest substring" << std::endl;
-    exit(1);
-  }
-  std::cout << std::endl;
+  std::vector<LeetcodeSolution*> ls = {
+      new LongestSubstringWithoutRepeatingCharacters(),
+      new ReverseInteger(),
+      new MonotonicArray()
+  };
+  std::vector<std::string> testNames = {
+      "longest substring without repeating characters",
+      "reverse integer",
+      "monotonic array"
+  };
 
-  ReverseInteger* ri = new ReverseInteger();
-  std::cout << "Testing reverse integer:" << std::endl;
-  int ret1 = ri->test();
-  if (ret1) {
-    std::cerr << "Error with reverse integer" << std::endl;
-    exit(1);
-  }
-  std::cout << std::endl;
+  for (int i = 0; i < ls.size(); ++i) {
+    std::cout << "Testing " << testNames[i] << ":" << std::endl;
+    int ret = ls[i]->test();
+    if (ret) {
+      std::cerr << "Error with " << testNames[i] << std::endl;
+      exit(1);
+    }
 
-  MonotonicArray* a = new MonotonicArray();
-  std::cout << "Testing monotonic array:" << std::endl;
-  int ret2 = a->test();
-  if (ret2) {
-    std::cerr << "Error with monotonic array" << std::endl;
-    exit(1);
+    if (i != ls.size() - 1)  std::cout << std::endl;
   }
 }

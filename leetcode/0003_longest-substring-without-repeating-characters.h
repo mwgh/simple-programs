@@ -1,12 +1,13 @@
 #pragma once
+#include "leetcode-solution.h"
 #include <algorithm>
 #include <iostream>
 #include <map>
 #include <string>
 
-class LongestSubstringWithoutRepeatingCharacters {
+class LongestSubstringWithoutRepeatingCharacters: public LeetcodeSolution {
 public:
   int lengthOfLongestSubstring(std::string s);
 
-  int test(void);
+  virtual int test(void);
 };

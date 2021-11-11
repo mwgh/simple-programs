@@ -1,10 +1,11 @@
 #pragma once
+#include "leetcode-solution.h"
 #include <iostream>
 #include <limits>
 
-class ReverseInteger {
+class ReverseInteger: public LeetcodeSolution {
 public:
   int reverse(int x);
 
-  int test(void);
+  virtual int test(void);
 };
