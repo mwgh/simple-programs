@@ -9,5 +9,5 @@ public:
   virtual ~MonotonicArray() {};
   bool isMonotonic(std::vector<int>& A);
   void print_vector(std::vector<int>& A);
-  virtual int test(void);
+  virtual int test();
 };

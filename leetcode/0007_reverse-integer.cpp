@@ -17,7 +17,7 @@ int ReverseInteger::reverse(int x) {
   return res;
 }
 
-int ReverseInteger::test(void) {
+int ReverseInteger::test() {
   int x = -9753;
   std::cout << "The reverse of the integer " << x << " is " << reverse(x) <<
       "." << std::endl;

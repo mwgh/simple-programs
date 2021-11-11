@@ -10,5 +10,5 @@ public:
   LongestSubstringWithoutRepeatingCharacters() {};
   virtual ~LongestSubstringWithoutRepeatingCharacters() {};
   int lengthOfLongestSubstring(std::string s);
-  virtual int test(void);
+  virtual int test();
 };

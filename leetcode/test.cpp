@@ -3,7 +3,7 @@
 #include <string>
 #include <vector>
 
-int main(void) {
+int main() {
   std::vector<LeetcodeSolution*> sols = {
     new LongestSubstringWithoutRepeatingCharacters(),
     new ReverseInteger(),

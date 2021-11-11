@@ -8,5 +8,5 @@ public:
   ReverseInteger() {};
   virtual ~ReverseInteger() {};
   int reverse(int x);
-  virtual int test(void);
+  virtual int test();
 };

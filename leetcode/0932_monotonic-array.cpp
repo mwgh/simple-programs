@@ -33,7 +33,7 @@ void MonotonicArray::print_vector(std::vector<int>& A) {
   std::cout << "]" << std::endl;
 }
 
-int MonotonicArray::test(void) {
+int MonotonicArray::test() {
   std::vector<int> A {0, 5, 7, 1};
   print_vector(A);
   std::cout << "Is the vector monotonic? "
