@@ -15,13 +15,10 @@ int LongestSubstringWithoutRepeatingCharacters::lengthOfLongestSubstring(
   return ans;
 }
 
-int LongestSubstringWithoutRepeatingCharacters::test(void) {
+int LongestSubstringWithoutRepeatingCharacters::test() {
   std::string hello = "hello abcdefg";
-  LongestSubstringWithoutRepeatingCharacters ls;
   std::cout << "The length of the longest substring without repeating "
-      "characters in the string '"
-      << hello << "' is "
-      << ls.lengthOfLongestSubstring(hello)
-      << "." << std::endl;
+      "characters in the string '" << hello << "' is "
+      << lengthOfLongestSubstring(hello) << "." << std::endl;
   return 0;
 }
