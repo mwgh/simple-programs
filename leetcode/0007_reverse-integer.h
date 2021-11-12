@@ -5,8 +5,8 @@
 
 class ReverseInteger: public LeetcodeSolution {
 public:
-  ReverseInteger() {};
-  virtual ~ReverseInteger() {};
+  ReverseInteger() {}
+  virtual ~ReverseInteger() {}
   int reverse(int x);
   virtual int test();
 };

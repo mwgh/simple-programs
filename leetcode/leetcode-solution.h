@@ -2,6 +2,6 @@
 
 class LeetcodeSolution {
 public:
-  virtual ~LeetcodeSolution() {};
+  virtual ~LeetcodeSolution() {}
   virtual int test() = 0;
 };

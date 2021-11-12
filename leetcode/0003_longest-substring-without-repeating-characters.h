@@ -7,8 +7,8 @@
 
 class LongestSubstringWithoutRepeatingCharacters: public LeetcodeSolution {
 public:
-  LongestSubstringWithoutRepeatingCharacters() {};
-  virtual ~LongestSubstringWithoutRepeatingCharacters() {};
+  LongestSubstringWithoutRepeatingCharacters() {}
+  virtual ~LongestSubstringWithoutRepeatingCharacters() {}
   int lengthOfLongestSubstring(std::string s);
   virtual int test();
 };

@@ -5,8 +5,8 @@
 
 class MonotonicArray: public LeetcodeSolution {
 public:
-  MonotonicArray() {};
-  virtual ~MonotonicArray() {};
+  MonotonicArray() {}
+  virtual ~MonotonicArray() {}
   bool isMonotonic(std::vector<int>& A);
   void print_vector(std::vector<int>& A);
   virtual int test();
