@@ -16,17 +16,17 @@ bool MonotonicArray::isMonotonic(std::vector<int>& A) {
 }
 
 void MonotonicArray::print_vector(std::vector<int>& A) {
-  bool has_l = A.size() >= 1;
-  std::vector<int>::iterator l;
-  if (has_l) {
-    l = A.end();
-    --l;
+  bool has_last = A.size() >= 1;
+  std::vector<int>::iterator last;
+  if (has_last) {
+    last = A.end();
+    --last;
   }
 
   std::cout << "[";
   for (auto i = A.cbegin(); i != A.cend(); ++i) {
     std::cout << *i;
-    if (has_l && i != l) {
+    if (has_last && i != last) {
       std::cout << ", ";
     }
   }
