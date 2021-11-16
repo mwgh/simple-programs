@@ -11,8 +11,7 @@ int sumFile(FILE *fp) {
     // 1 int on line
     while (fscanf(fp, "%d", &freqChange) == 1) {
         currentFreq += freqChange;
-        printf("Current freq is %d, freq change is %d\n", currentFreq,
-                freqChange);
+        printf("Current freq is %d, freq change is %d\n", currentFreq, freqChange);
     }
     return currentFreq;
 }
