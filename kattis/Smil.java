@@ -1,8 +1,8 @@
 import java.util.Scanner;
 
 class Smil {
-	public static void main(String[] args) {
-		Scanner scanner = new Scanner(System.in);
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
         String[] smilies = {":)", ";)", ":-)", ";-)"};
         String s = scanner.next();
         for (String smilie : smilies) {
@@ -17,5 +17,5 @@ class Smil {
                 }
             } while (i != -1);
         }
-	}
+    }
 }
