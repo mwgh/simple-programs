@@ -1,8 +1,7 @@
 def lowerChar(char):
    if 65 <= ord(char) <= 90:
       return chr(ord(char) + 32)
-   else:
-      return char
+   return char
 
 def lowerString(string):
    result = ""
