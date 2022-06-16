@@ -5,7 +5,7 @@ def prod(L):
     return prod
 
 # def prod(L):
-#    prod = 1
-#    for n in L:
-#       prod = prod * n
-#    return prod
+#     prod = 1
+#     for n in L:
+#         prod = prod * n
+#     return prod
