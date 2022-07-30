@@ -24,7 +24,7 @@ char **loadItems(FILE *fp, int *arrayLengthPtr) {
     items = reallocarray(items, i + 1, sizeof(char *));
     if (items == NULL) {
       fprintf(stderr, "Error with reallocarray\n");
-      exit(EXIT_FAILURE);
+      exit(1);
     }
   }
 
@@ -35,7 +35,7 @@ char **loadItems(FILE *fp, int *arrayLengthPtr) {
   items = reallocarray(items, *arrayLengthPtr, CHARACTERS_PER_LINE + 1);
   if (items == NULL) {
     fprintf(stderr, "Error with reallocarray's final call\n");
-    exit(EXIT_FAILURE);
+    exit(1);
   }
 
   return items;
@@ -72,7 +72,7 @@ int main() {
   fp = fopen(inFile, mode);
   if (fp == NULL) {
     fprintf(stderr, "Cannot open the input file named %s!\n", inFile);
-    exit(EXIT_FAILURE);
+    exit(1);
   }
 
   // Find the array length and load the file contents
@@ -89,5 +89,5 @@ int main() {
   free(arrayLengthPtr);
 
   fclose(fp);
-  return EXIT_SUCCESS;
+  return 0;
 }

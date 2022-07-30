@@ -17,7 +17,7 @@ int *loadIntegers(FILE *fp, int *arrayLengthPtr) {
     integers = reallocarray(integers, i + 1, sizeof(int));
     if (integers == NULL) {
       fprintf(stderr, "Error with reallocarray");
-      exit(EXIT_FAILURE);
+      exit(1);
     }
   }
 
@@ -28,7 +28,7 @@ int *loadIntegers(FILE *fp, int *arrayLengthPtr) {
   integers = reallocarray(integers, *arrayLengthPtr, sizeof(int));
   if (integers == NULL) {
     fprintf(stderr, "Error with reallocarray's final call");
-    exit(EXIT_FAILURE);
+    exit(1);
   }
 
   return integers;
@@ -57,26 +57,21 @@ int findProductForSum(int *integers, int *arrayLengthPtr) {
 
 int main() {
   // Open the file
-  FILE *fp;
-  const char *mode = "r";
   const char *inFile = "input";
-
-  fp = fopen(inFile, mode);
+  FILE *fp = fopen(inFile, "r");
   if (fp == NULL) {
     fprintf(stderr, "Can't open input file %s!\n", inFile);
-    exit(EXIT_FAILURE);
+    exit(1);
   }
 
   // Find the array length and load the file contents
   int *arrayLengthPtr = malloc(sizeof(int));
   int *integers = loadIntegers(fp, arrayLengthPtr);
-
-  int product = findProductForSum(integers, arrayLengthPtr);
-  printf("The product is %d\n", product);
+  printf("The product is %d\n", findProductForSum(integers, arrayLengthPtr));
 
   free(arrayLengthPtr);
   free(integers);
 
   fclose(fp);
-  return EXIT_SUCCESS;
+  return 0;
 }
