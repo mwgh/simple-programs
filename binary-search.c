@@ -44,7 +44,7 @@ Position recurse(List L, ElementType X, Position start, Position end) {
         return NotFound;
     }
 
-    Position mid = (start + end) / 2;
+    Position mid = ((unsigned int)(start + end)) >> 1;
     if (L->Data[mid] == X) {
         return mid;
     } else if (L->Data[mid] < X) {
