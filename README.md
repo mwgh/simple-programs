@@ -1,3 +1,1 @@
-# simple-programs
 
-* LeetCode solutions
