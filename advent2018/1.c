@@ -18,17 +18,15 @@ int sumFile(FILE *fp) {
 
 int main() {
     FILE *fp;
-    char *mode = "r";
     char *inFile = "input";
 
-    fp = fopen(inFile, mode);
+    fp = fopen(inFile, "r");
     if (fp == NULL) {
         fprintf(stderr, "Can't open input file %s!\n", inFile);
         exit(1);
     }
 
-    int resultingFreq = sumFile(fp);
-    printf("Resulting frequency is %d\n", resultingFreq);
+    printf("Resulting frequency is %d\n", sumFile(fp));
 
     fclose(fp);
 }
