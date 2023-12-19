@@ -1,4 +1,3 @@
 def isPalindrome(S):
-    if S == S[::-1]:
-        return True
-    return False
+    lower = S.lower()
+    return (lower == lower[::-1])
