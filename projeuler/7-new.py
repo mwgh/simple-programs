@@ -25,4 +25,4 @@ while count < limit:
 	if is_prime(candidate):
 		count += 1
 
-print('Prime number', limit, 'is', candidate)
+print(f'The {limit}th prime number is {candidate}')

@@ -5,9 +5,9 @@ b = 1
 c = a + b
 
 while c < limit:
-    sum = sum + c
-    a = b + c
-    b = c + a
-    c = a + b
+	sum = sum + c
+	a = b + c
+	b = c + a
+	c = a + b
 
 print(sum)

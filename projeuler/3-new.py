@@ -9,11 +9,11 @@ step = 2
 # num = 100000
 
 if num % 2 == 0:
-    lastFactor = 2
+	lastFactor = 2
 
 for i in range(3, end, step):
-    if num % i == 0:
-        lastFactor = i
-        num /= i
+	if num % i == 0:
+		lastFactor = i
+		num /= i
 
 print(lastFactor)
