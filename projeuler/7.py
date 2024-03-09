@@ -1,7 +1,7 @@
 import math
 
 def sieve(MAX):
-    """Return is_prime[MAX] for numbers [0, MAX - 1] with sieve of eratosthenes
+    """Return a list of length MAX for numbers [0, MAX - 1] with sieve of eratosthenes
     True if N is prime, False if N is composite
     Mark multiples of each prime as composite (not primes themselves)
     multiple = p*p, p*p + p, p*p + 2p, ... are composite
