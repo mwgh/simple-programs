@@ -34,4 +34,4 @@ for x in is_prime[2:]:
 	i += 1
 
 num = 10001
-print(f"{num} prime is {primes[10000]}")
+print(f"{num} prime is {primes[num-1]}")
