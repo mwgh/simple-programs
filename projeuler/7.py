@@ -12,7 +12,7 @@ def sieve(MAX):
         is_prime.append(True)
 
     for p in range(2, int(math.sqrt(MAX))):
-        if is_prime[p] == True:
+        if is_prime[p]:
             for multiple in range(p * p, MAX, p):
                 is_prime[multiple] = False
     return is_prime
