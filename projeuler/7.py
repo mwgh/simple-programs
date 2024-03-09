@@ -26,12 +26,7 @@ assert(is_prime[11])
 assert(is_prime[13])
 assert(not is_prime[12])
 
-primes = []
-i = 2
-for x in is_prime[2:]:
-	if x:
-		primes.append(i)
-	i += 1
+primes = [i for i in range(len(is_prime)) if is_prime[i]]
 
 num = 10001
 print(f"{num} prime is {primes[num-1]}")
