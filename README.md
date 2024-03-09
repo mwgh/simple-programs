@@ -1,4 +1,9 @@
 # simple-programs
-Binary search from Programming Teaching Assistant  
-hello_world from Rust tutorial  
-edx from ITMO University online course
+Programming Teaching Assistant
+- Binary search
+
+Rust tutorial
+- hello_world
+
+ITMO University online course
+- edx
