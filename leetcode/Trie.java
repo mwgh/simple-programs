@@ -29,15 +29,15 @@ class Trie {
 
     public static void main(String[] args) {
         String key = "word";
-        String p = "wi";
+        String prefix = "wi";
 
         Trie obj = new Trie();
         obj.insert(key);
         boolean param_2 = obj.search(key);
-        boolean param_3 = obj.startsWith(p);
+        boolean param_3 = obj.startsWith(prefix);
         System.out.println("Inserted '" + key + "' in the trie");
         System.out.println("Found the key '" + key + "' in the trie: " + param_2);
-        System.out.println("Found the prefix '" + p + "' in the trie: " + param_3);
+        System.out.println("Found the prefix '" + prefix + "' in the trie: " + param_3);
     }
 
     public void insert(String word) {
