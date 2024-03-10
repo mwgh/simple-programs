@@ -13,11 +13,11 @@ class Trie {
         public void put(char c, TrieNode node) {
             children[c - 'a'] = node;
         }
-        
+
         public boolean isEnd() {
             return isEnd;
         }
-        
+
         public void setEnd(boolean isEnd) {
             this.isEnd = isEnd;
         }
@@ -36,15 +36,13 @@ class Trie {
         boolean param_2 = obj.search(key);
         boolean param_3 = obj.startsWith(p);
         System.out.println("Inserted '" + key + "' in the trie");
-        System.out.println("Found the key '" + key + "' in the trie: " 
-                + param_2);
-        System.out.println("Found the prefix '" + p + "' in the trie: " 
-                + param_3);
+        System.out.println("Found the key '" + key + "' in the trie: " + param_2);
+        System.out.println("Found the prefix '" + p + "' in the trie: " + param_3);
     }
-    
+
     public void insert(String word) {
         TrieNode current = root;
-        
+
         for (int i = 0; i < word.length(); ++i) {
             char c = word.charAt(i);
             TrieNode next = current.get(c);
@@ -58,19 +56,19 @@ class Trie {
 
         current.setEnd(true);
     }
-    
+
     public boolean search(String word) {
         TrieNode node = searchPrefix(word);
         return node != null && node.isEnd();
     }
-    
+
     public boolean startsWith(String prefix) {
         return searchPrefix(prefix) != null;
     }
-    
+
     private TrieNode searchPrefix(String word) {
         TrieNode current = root;
-        
+
         for (int i = 0; i < word.length(); ++i) {
             TrieNode next = current.get(word.charAt(i));
             
@@ -80,10 +78,10 @@ class Trie {
                 return null;
             }
         }
-        
+
         return current;
     }
-    
+
     private TrieNode createNode() {
         TrieNode node = new TrieNode();
         node.setEnd(false);
