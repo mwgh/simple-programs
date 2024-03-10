@@ -1,1 +1,1 @@
-*-new.py: coded by implementing the given solution pdf after solving the problem 1x
+*-new.py: coded by copying the solution pdf after solving the problem 1x
