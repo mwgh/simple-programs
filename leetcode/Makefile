@@ -1,6 +1,6 @@
-all: *.h *.cpp
+all: *.h *.cpp *.java
 	g++ -o test -Wall -Wextra *.cpp
-	#javac *.java
+	javac *.java
 
 clean:
 	rm -f test *.class
