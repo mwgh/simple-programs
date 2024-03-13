@@ -2,7 +2,7 @@ class Trie {
     private TrieNode root;
 
     class TrieNode {
-        private final static int ALPHABET_SIZE = 26;
+        private static final int ALPHABET_SIZE = 26;
         private TrieNode[] children = new TrieNode[ALPHABET_SIZE];
         private boolean isEnd;
 
