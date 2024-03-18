@@ -2,7 +2,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-public class ACMQualifiers {
+public class Solution {
 
     public static void main(String[] args) throws FileNotFoundException {
         File file = new File("testinput.txt");
