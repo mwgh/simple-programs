@@ -25,5 +25,6 @@ class Main {
 
             System.out.println("Case " + (i + 1) + ": " + diff);
         }
+        in.close();
     }
 }
