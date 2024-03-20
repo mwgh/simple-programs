@@ -7,14 +7,14 @@ public class TheatreSquare {
 		long n = scan.nextInt();
 		long m = scan.nextInt();
 		long a = scan.nextInt();
-		
+
 		TheatreSquare theatreSquare = new TheatreSquare();
-		
+
 		long lengthFlagstones = theatreSquare.getFlagstones(n, a);
 		long widthFlagstones = theatreSquare.getFlagstones(m, a);
 		System.out.println(lengthFlagstones * widthFlagstones);
 	}
-	
+
 	private long getFlagstones(long size, long flagstoneSize) {
 		return (long)Math.ceil(size / (double)flagstoneSize);
 	}
