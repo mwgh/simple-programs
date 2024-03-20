@@ -1,2 +1,2 @@
 # simple-programs
-Leetcode
+LeetCode
